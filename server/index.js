@@ -30,6 +30,7 @@ io.on('connect', (socket) => {
     callback();
   });
 
+  
   socket.on('sendMessage', (message, callback) => {
     const user = getUser(socket.id);
 
